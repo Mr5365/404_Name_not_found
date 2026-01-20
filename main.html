@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ARWork Assist | Main Dashboard</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="photos/icon.png" type="image/png">
+
+    <!-- Mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Global Theme -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .dashboard-container {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 20px;
+        }
+
+        .dashboard-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .dashboard-header h2 {
+            color: var(--primary);
+            font-size: 34px;
+        }
+
+        .dashboard-header p {
+            margin-top: 10px;
+            opacity: 0.9;
+            font-size: 16px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 35px;
+        }
+
+        .service-card {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 22px;
+            padding: 40px;
+            backdrop-filter: blur(14px);
+            cursor: pointer;
+            transition: 0.35s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                120deg,
+                transparent,
+                rgba(95,255,224,0.18),
+                transparent
+            );
+            opacity: 0;
+            transition: 0.35s;
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+        }
+
+        .service-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.45);
+        }
+
+        .service-card h3 {
+            color: var(--accent);
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            font-size: 15px;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        .service-tag {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 8px 18px;
+            font-size: 13px;
+            border-radius: 20px;
+            background: rgba(95,255,224,0.15);
+            color: var(--primary);
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>ARWork Assist</h1>
+    <p>Augmented Reality Based Equipment Maintenance Assistant</p>
+</header>
+
+<div class="dashboard-container">
+
+    <div class="dashboard-header">
+        <h2>Maintenance Services</h2>
+        <p>Select a service to begin AR-assisted maintenance</p>
+    </div>
+
+    <div class="services-grid">
+
+        <!-- SERVICE 1: AR BLIND-SPOT INSPECTION -->
+        <div class="service-card" onclick="location.href='policy.html'">
+            <h3>📷 AR Blind-Spot Inspection</h3>
+            <p>
+                Perform live video-based inspection of inaccessible machine
+                areas using your smartphone camera. Capture visual data
+                required for 3D reconstruction and accurate fault diagnosis
+                without dismantling equipment.
+            </p>
+            <span class="service-tag">AR • Video • Core</span>
+        </div>
+
+        <!-- SERVICE 2: INDUSTRIAL OBJECT IDENTIFICATION -->
+        <div class="service-card" onclick="location.href='identify/identify.html'">
+            <h3>🏭 Industrial Object Identification</h3>
+            <p>
+                Identify industrial machines and components using the camera
+                and receive instant object name, description, and functional
+                information to assist technicians during maintenance tasks.
+            </p>
+            <span class="service-tag">AR • Vision • Identification</span>
+        </div>
+
+        <!-- SERVICE 3: MACHINE EFFICIENCY ANALYSIS -->
+        <div class="service-card"
+             onclick="window.open('https://cog-confidant.vercel.app/', '_blank')">
+            <h3>📊 Machine Efficiency Analysis</h3>
+            <p>
+                Evaluate machine operational efficiency by analyzing
+                performance indicators and inspection data to identify
+                inefficiencies, losses, and early signs of performance
+                degradation.
+            </p>
+            <span class="service-tag">Analytics • Performance • Maintenance</span>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    © 2026 ARWork Assist | InnoHack Project
+</footer>
+
+</body>
+</html>

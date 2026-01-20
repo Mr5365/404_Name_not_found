@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Policy | Industrial Object Identification</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../photos/icon.png" type="image/png">
+
+    <!-- Mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Main theme -->
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .policy-container {
+            max-width: 850px;
+            margin: 90px auto;
+            padding: 35px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 22px;
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .policy-container h2 {
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        .policy-container p {
+            margin-bottom: 15px;
+            font-size: 15px;
+            line-height: 1.7;
+            opacity: 0.95;
+        }
+
+        .policy-container ul {
+            margin: 20px 0 25px 20px;
+        }
+
+        .policy-container li {
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        .policy-actions {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn.secondary {
+            background: transparent;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            box-shadow: none;
+        }
+
+        .btn.secondary:hover {
+            background: rgba(95, 255, 224, 0.15);
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>ARWork Assist</h1>
+    <p>Industrial Object Identification</p>
+</header>
+
+<div class="policy-container">
+
+    <h2>Usage Policy & Consent</h2>
+
+    <p>
+        This service uses camera-based visual input to assist in identifying
+        industrial machines and components. Please read the following terms
+        carefully before proceeding.
+    </p>
+
+    <ul>
+        <li>📷 Camera access is required only for object identification.</li>
+        <li>🔒 No personal or biometric data is collected or stored.</li>
+        <li>🧠 Visual data may be processed to determine object type.</li>
+        <li>⚠ Identification results are assistive and not a replacement for professional inspection.</li>
+        <li>🏭 Always follow on-site safety and operational guidelines.</li>
+    </ul>
+
+    <p>
+        By clicking <strong>Accept & Continue</strong>, you acknowledge that you
+        understand and agree to the above terms.
+    </p>
+
+    <div class="policy-actions">
+        <a href="identify.html" class="btn secondary">
+            Go Back
+        </a>
+
+        <!-- EXTERNAL LINK -->
+        <a href="https://indentify.vercel.app/"
+           class="btn"
+           target="_blank"
+           rel="noopener noreferrer">
+            Accept & Continue
+        </a>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 ARWork Assist | InnoHack Project
+</footer>
+
+</body>
+</html>

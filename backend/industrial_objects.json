@@ -1,0 +1,15 @@
+{
+  "centrifugal_pump": {
+    "name": "Centrifugal Pump",
+    "description": "Used to transport fluids using rotational energy.",
+    "applications": ["Water supply", "Cooling systems"],
+    "common_faults": ["Cavitation", "Seal leakage"]
+  },
+
+  "electric_motor": {
+    "name": "Electric Motor",
+    "description": "Converts electrical energy into mechanical energy.",
+    "applications": ["Pumps", "Conveyors"],
+    "common_faults": ["Overheating", "Bearing wear"]
+  }
+}
